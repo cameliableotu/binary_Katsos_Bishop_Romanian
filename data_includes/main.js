@@ -80,31 +80,26 @@ PennController("details" ,
 	       ,
   newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
 	       ,
-   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
-   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
-  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
-   newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
+   newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
 	       ,
-	      newImage("bigapple", "bigapple.png")
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
+   newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
+    ,
+  newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
 	       newKey(" ")
         .wait()
-	        
 )
 ;	    
 PennController("trial" ,
@@ -155,38 +150,33 @@ PennController("trial2" ,
 	       ,
 	       newText ("<p> Baby Dragon Flurry says: It is the orange bunny. </p>")
 	       ,
-	       newText ("<p> Baby Dragon Flurry made a bad description. The shadow does not belong to the orange bunny, who is in front of the curtain, but to the pink bunny. </p>"),
-	       newText ("<p> Because of this, you will give the baby dragon a small apple, not a big apple or a huge apple. </p>"),
+	       newText ("<p> Baby Dragon Flurry's description is clearly not the best one. The shadow does not belong to the orange bunny, who is in front of the curtain, but to the pink bunny. </p>"),
+	       newText ("<p> Because of this, you will give the baby dragon a small apple, not a big apple. </p>"),
 	       newText ("<p> To reward the dragon, you will click on the apple which is his reward, in this case, the small apple.</p>"),
-	        newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
 
+	        
 PennController("trialbunny" ,
 	    defaultText
 	        .print()
@@ -205,34 +195,29 @@ PennController("trialbunny" ,
 	       ,
 	       newText ("<p> How will you reward the baby dragon? </p>")
 	       ,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController("trialbunny2" ,
 	    defaultText
 	        .print()
@@ -247,34 +232,29 @@ PennController("trialbunny2" ,
 	       ,
 	       newText ("<p> How will you reward the baby dragon? </p>")
 	       ,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	     newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-   
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController("trialbunny2" ,
 	    defaultText
 	        .print()
@@ -373,33 +353,28 @@ PennController ("experiment",
 	        .print(),
 		newText ("<p> Now all the dogs have gone behind the curtain. </p>"),
 		
-  newText ("<p> The baby dragon have to describe what they think is behind the shadow. </p>")
+  newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
 	       ,
-   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
-   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
-  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
-   newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
+   newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
+    ,
+  newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       newKey(" ")
         .wait()
 )
-;
+;	    
 
 PennController("experiment" ,
 	    defaultText
@@ -446,34 +421,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -484,33 +454,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -521,33 +487,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -584,33 +546,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		 ,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -640,33 +598,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-		newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+		newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 
 PennController ("experiment",
 		defaultText
@@ -678,33 +632,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -715,33 +665,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -788,31 +734,26 @@ PennController ("experiment",
 		
   newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
 	       ,
-   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
-   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
-  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
-   newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+  newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
+   newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
+    ,
+  newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       newKey(" ")
         .wait()
 )
-;
+;	    
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -855,33 +796,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 	PennController ("experiment",
 		defaultText
 	        .print(),
@@ -895,33 +832,29 @@ newSelector()
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -932,32 +865,27 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	     newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
 
 PennController("experiment" ,
@@ -996,32 +924,27 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
 
 PennController ("experiment",
@@ -1050,33 +973,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1087,33 +1006,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1125,33 +1040,29 @@ PennController ("experiment",
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -1195,32 +1106,26 @@ PennController ("experiment",
 		
   newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
 	       ,
-   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
-   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
-  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
-   newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
+   newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
+    ,
+  newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       newKey(" ")
         .wait()
 )
-;
-
+;	    
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -1270,33 +1175,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	     newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1307,33 +1208,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1344,35 +1241,28 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
-
-
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -1408,32 +1298,27 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
 
 PennController ("experiment",
@@ -1461,33 +1346,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	     newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	   newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1498,33 +1379,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1535,33 +1412,29 @@ PennController ("experiment",
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -1606,32 +1479,26 @@ PennController ("experiment",
 		
   newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
 	       ,
-   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
-   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
-  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
-   newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
+   newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
+    ,
+  newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       newKey(" ")
         .wait()
 )
-;
-
+;	    
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -1679,34 +1546,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
-;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1717,32 +1579,27 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
 
 PennController ("experiment",
@@ -1755,32 +1612,27 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
 
 PennController("experiment" ,
@@ -1819,33 +1671,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 			 ,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
+	     newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 
 PennController ("experiment",
 		defaultText
@@ -1872,32 +1720,27 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
 PennController ("experiment",
 		defaultText
@@ -1909,33 +1752,29 @@ PennController ("experiment",
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -1947,33 +1786,29 @@ PennController ("experiment",
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	    
+	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID"))
 ;
+
 PennController("experiment" ,
 	    defaultText
 	        .print(),
