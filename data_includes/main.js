@@ -1573,7 +1573,7 @@ PennController ("experiment",
 		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the yellow cow.</p>")
+		newText ("<p> Baby Dragon Bindy: It is possible that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1607,7 +1607,7 @@ PennController ("experiment",
 		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the green cow.</p>")
+		newText ("<p> Baby Dragon Bindy: It is possible that it is the yellow cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
