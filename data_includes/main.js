@@ -415,7 +415,7 @@ PennController ("experiment",
 		newAudio("barking", "barking.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Flurry: It is possible that it is the blue dog.</p>")
+		newText ("<p> Baby Dragon Flurry: It is possible that it is the red dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -448,7 +448,7 @@ PennController ("experiment",
 		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Flurry: It is possible that it is the red dog.</p>")
+		newText ("<p> Baby Dragon Flurry: It is possible that it is the blue dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -826,7 +826,7 @@ newSelector()
 		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the purple frog.</p>")
+		newText ("<p> Baby Dragon Bindy: It is possible that it is the red frog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -859,7 +859,7 @@ PennController ("experiment",
 		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the red frog.</p>")
+		newText ("<p> Baby Dragon Bindy: It is possible that it is the purple frog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
