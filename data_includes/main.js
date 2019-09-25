@@ -80,8 +80,6 @@ PennController("details" ,
 	       ,
   newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
 	       ,
-   newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
-	       ,
    newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
    newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
     ,
