@@ -226,7 +226,7 @@ PennController("trialbunny2" ,
 	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
 	       .print ( )
 	       ,
-	       newText ("<p> Puiul de dragon Flurry: Este iepuraşul .</p>")
+	       newText ("<p> Puiul de dragon Flurry: Este iepuraşul roz.</p>")
 	       ,
 	       newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 	       ,
@@ -759,7 +759,6 @@ PennController("experiment" ,
 	          ,  
 	       newText ("<p> Deci umbra nu este broasca albastră! </p>")
 	       ,
-			,
       newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
          .print()
 	       ,
@@ -900,7 +899,6 @@ PennController("experiment" ,
 		.play()
 	       ,
 	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
-	       .print() </p>")
 	       .print()
 	       ,
 	       newKey(" ")
@@ -1148,7 +1146,7 @@ PennController ("experiment",
 		defaultText
 	        .print(),
 		newText ("<p> Hai să vedem ce spune puiul de dragon Flurry despre umbră. </p>")
-	       ,. </p>")
+	
 	       ,
 		newImage ("Flurry", "Flurry.png")
 		.print ()
