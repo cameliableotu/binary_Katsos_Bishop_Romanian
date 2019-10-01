@@ -226,9 +226,9 @@ PennController("trialbunny2" ,
 	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
 	       .print ( )
 	       ,
-	       newText ("<p> Baby Dragon Flurry: It is the pink bunny.</p>")
+	       newText ("<p> Puiul de dragon Flurry: Este iepuraşul .</p>")
 	       ,
-	       newText ("<p> How will you reward the baby dragon? </p>")
+	       newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 	       ,
 	     newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -258,7 +258,7 @@ PennController("trialbunny2" ,
 	        .print()
 	    
 	       ,
-	       newText ("<p> Now let's see who the shadow belongs to! It is the pink bunny! </p>")
+	       newText ("<p> Hai să vedem acum a cui este umbra! Umbra este iepuraşul roz! </p>")
 	       ,
 	      
 	       newImage ("bunnyrevealed", "bunnyrevealedonstage1.jpg")
@@ -267,7 +267,7 @@ PennController("trialbunny2" ,
 	        newAudio("bunnysounds", "bunnysounds.mp3")
 		.play()
 	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
+	      newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
 	       .print()
 	       ,
 	       newKey(" ")
@@ -278,7 +278,7 @@ PennController("introductionanimals" ,
 	    defaultText
 	        .print()
 	    ,
-	    newText ("<p> Now let's get acquainted with the animals in the show. We have got a group of three dogs. </p>")
+	    newText ("<p> Hai acum să facem cunoştinţă cu celelalte animale din spectacol. Avem un grup de trei câini. </p>")
 	    ,
 	                  
 	     newImage ("threedogs.png")
@@ -287,7 +287,7 @@ PennController("introductionanimals" ,
 	       newAudio("barking", "barking.mp3")
 		.play()
 	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
 	       .print(),
 	       newKey(" ")
         .wait()
@@ -299,7 +299,7 @@ PennController("introductionanimals" ,
 	        .print()
 	    ,
 	   
-	       newText ("<p> A group of three frogs. </p>")
+	       newText ("<p> Un grup de trei broaşte. </p>")
 	    ,
 	                  
 	     newImage ("threefrogs.png")
@@ -315,7 +315,7 @@ PennController("introductionanimals" ,
 PennController("introductionanimals" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> A group of three cats. </p>")
+	       newText ("<p> Un grup de trei pisici. </p>")
 	    ,
 	                  
 	     newImage ("threecats.png")
@@ -332,7 +332,7 @@ PennController("introductionanimals" ,
 PennController("introductionanimals" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> and a group of three cows. </p>")
+	       newText ("<p> Şi un grup de trei vaci. </p>")
 	    ,
 	                  
 	     newImage ("threecows.png")
@@ -349,13 +349,13 @@ PennController("introductionanimals" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now all the dogs have gone behind the curtain. </p>"),
-		
-  newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
+		 newText ("<p> Toţi câinii s-au dus acum în spatele cortinei. <p>")
 	       ,
-   newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
-   newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
-    ,
+  newText ("<p> Puii de dragon trebuie să descrie a cui cred că este umbra. </p>")
+	       ,
+   newText ("<p> Când puiul de dragon oferă cea mai bună descriere, trebuie să-l răsplăteşti cu un măr mare. </p>"), 
+   newText ("<p> Atunci când puiul de dragon nu oferă cea mai bună descriere, îi dai doar un măr mic. </p>")
+,
   newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
@@ -377,10 +377,10 @@ PennController ("experiment",
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-  newText ("<p> Oh, look, the yellow dog has just come in front of the curtain, but we can see the shadow there in the spotlight.</p>")
-	          ,    
-  newText ("<p> So the shadow is not the yellow dog! </p>")
-			,
+            newText ("<p> Uite, câinele galben a revenit în faţa cortinei, dar umbra este încă acolo, în lumina reflectoarelor.</p>")
+	          ,        
+	       newText ("<p> Deci umbra nu este câinele galben! </p>")
+	       ,
       newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
          .print()
 	       ,
@@ -395,7 +395,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now let's see what baby dragon Flurry says about the shadow. </p>")
+		newText ("<p> Hai să vedem ce zice puiul de dragon Flurry despre umbră. </p>")
 	       ,
 		newImage ("Flurry", "Flurry.png").
 		print ()
@@ -415,42 +415,9 @@ PennController ("experiment",
 		newAudio("barking", "barking.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Flurry: It is possible that it is the red dog.</p>")
+		newText ("<p> Puiul de dragon Flurry: Poate că este câinele roşu. </p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(450,200)
-        .settings.add( 0 , 0 , getImage("bigapple") )
-        .settings.add( 250 , 0 , getImage("smallapple") )
-        .print()
-	       ,
-	       // newKey("FJ")
-newSelector()
-    .settings.add( getImage("bigapple") , getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J"   )
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID"))
-;
-
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon Flurry: It is possible that it is the blue dog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -481,9 +448,42 @@ PennController ("experiment",
 		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Flurry: It is certain that it is the red dog.</p>")
+		newText ("<p> Puiul de dragon Flurry: Poate că este câinele albastru. </p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
+		,
+	       newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       // newKey("FJ")
+newSelector()
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
+    .settings.log()
+    .wait()
+)
+.log( "ID" , getVar("ID"))
+;
+
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
+               .print ()
+		,
+		newText ("<p> Puiul de dragon Flurry: Sigur că este câinele roşu.</p>")
+		,
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -511,17 +511,17 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	 newText ("<p> Oh, look, the red dog and the yellow dog have come in front of the curtain.</p>")
-	          ,    
-	  newText ("<p> So the shadow is not the red dog! And it is not the yellow dog! </p>")
-			,
+	 newText ("<p> Uite, câinele roşu a revenit în faţa cortinei, alăturându-se câinelui galben, dar umbra este încă acolo, în lumina reflectoarelor</p>")
+	         ,        
+	       newText ("<p> Deci umbra nu este câinele roşu! Şi nu este câinele galben! </p>")
+	         ,         
 	   newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
          .print()
     ,
 	       	newAudio("barking", "barking.mp3")
 		.play()
 	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
 	       .print(),
 	       
 	       newKey(" ")
@@ -532,7 +532,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now let's see what baby dragon Flurry says about the shadow. </p>")
+		newText ("<p> Hai acum să vedem ce zice puiul de dragon Flurry despre umbră. </p>")
 		,
 		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
@@ -540,9 +540,9 @@ PennController ("experiment",
 		newAudio("barking", "barking.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Flurry: It is certain that it is the blue dog.</p>")
+		newText ("<p> Puiul de dragon Flurry: Sigur că este câinele albastru. </p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		 ,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -570,9 +570,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> It is certain that it is the blue dog indeed! </p>")
+		newText ("<p> E sigur că este câinele albastru într-adevăr! </p>")
 		,
-		newText ("<p> Let's see what baby dragon Bindy says about the shadow. </p>")
+		newText ("<p> Hai să vedem ce zice puiul de dragon Bindy despre umbră. </p>")
 		,
 		newImage ("Bindy80", "Bindy80.png")
 		.print ()
@@ -592,9 +592,9 @@ PennController ("experiment",
 		newAudio("barking", "barking.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the blue dog.</p>")
+		newText ("<p> Puiul de dragon Bindy: Poate că este câinele albastru.</p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 		newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -626,9 +626,9 @@ PennController ("experiment",
 		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Bindy: It is certain that it is the yellow dog.</p>")
+		newText ("<p> Puiul de dragon Bindy: Sigur că este câinele galben.</p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -659,9 +659,9 @@ PennController ("experiment",
 		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the red dog.</p>")
+		newText ("<p> Puiul de dragon Bindy: Poate că este câinele roşu.</p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -689,7 +689,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now let's see who the shadow belongs to. Pam-pam! It's the blue dog! </p>")
+	       newText ("<p> Hai acum să vedem a cui este umbra. Pam-pam! Este câinele albastru! </p>")
 	         ,         
 	     newImage ("bluedogonstage.jpg")
                .print ()
@@ -697,7 +697,7 @@ PennController("experiment" ,
 	       	newAudio("barking", "barking.mp3")
 		.play()
 	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
 	       .print()
 	       ,
 	       newKey(" ")
@@ -708,7 +708,7 @@ PennController("experiment" ,
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Let's get acquainted with the group of frogs. </p>")
+	       newText ("<p> Hai să trecem acum la grupul broaştelor. </p>")
 	    ,
 	                  
 	     newImage ("threefrogs.png")
@@ -717,7 +717,7 @@ PennController("experiment" ,
 	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
 	       .print(),
 	       
 	       newKey(" ")
@@ -728,13 +728,13 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now all the frogs have gone behind the curtain. </p>"),
-		
-  newText ("<p> The baby dragons have to describe what they think is behind the shadow. </p>")
+		newText ("<p> Toate broaştele s-au dus acum în spatele cortinei. <p>")
 	       ,
-  newText ("<p> If it's the best description, you have to reward the baby dragon with a big apple. </p>"),
-   newText ("<p> If it's not the best description, you'll just give him a small apple.  </p>")
-    ,
+  newText ("<p> Puii de dragon trebuie să descrie a cui cred că este umbra. </p>")
+	       ,
+   newText ("<p> Când puiul de dragon oferă cea mai bună descriere, trebuie să-l răsplăteşti cu un măr mare. </p>"), 
+   newText ("<p> Atunci când puiul de dragon nu oferă cea mai bună descriere, îi dai doar un măr mic. </p>")
+,
   newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
@@ -755,18 +755,18 @@ PennController ("experiment",
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Oh, look, the blue frog has just come in front of the curtain, but we can see the shadow there in the spotlight.</p>")
-	          ,    
-	       newText ("<p> So the shadow is not the blue frog! </p>")
+	       newText ("<p> Uite, broasca albastră a revenit în faţa cortinei, dar umbra este încă acolo, în lumina reflectoarelor. </p>")
+	          ,  
+	       newText ("<p> Deci umbra nu este broasca albastră! </p>")
+	       ,
 			,
       newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
          .print()
 	       ,
 	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play(),
-	       newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print()
-	       ,
+	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
+	       .print(),
 	       newKey(" ")
         .wait()
 	       
@@ -775,7 +775,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now let's see what baby dragon Bindy says about the shadow. </p>"),
+		newText ("<p> Hai să vedem ce spune puiul de dragon Bindy despre umbră. </p>"),
 		newImage ("Bindy80", "Bindy80.png")
 		.print ()
 		,
@@ -790,9 +790,9 @@ PennController ("experiment",
 		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Bindy: It is certain that it is the purple frog.</p>")
+		newText ("<p> Puiul de dragon Bindy: Sigur că este broasca mov.</p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplăti puiul de dragon? </p>")
 		,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -826,9 +826,9 @@ newSelector()
 		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the red frog.</p>")
+		newText ("<p> Puiul de dragon Bindy: Poate că este broasca roşie. </p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplăti puiul de dragon? </p>")
 		,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -859,9 +859,9 @@ PennController ("experiment",
 		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Bindy: It is possible that it is the purple frog.</p>")
+		newText ("<p> Puiul de dragon Bindy: Poate că este broasca mov.</p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	     newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -889,17 +889,18 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Oh, look, the purple frog has just come in front of the curtain, joining the blue frog, but the shadow is still there in the spotlight.</p>")
-	          ,    
-	       newText ("<p> So the shadow is not the purple frog! And it is not the blue frog! </p>")
-			,
+	        newText ("<p> Uite, broasca mov a revenit în faţa cortinei, alăturându-se broaştei albastre, dar umbra este încă acolo, în lumina reflectoarelor. </p>")
+	         ,         
+	       newText ("<p> Deci umbra nu este broasca mov! Şi nu este broasca albastră! </p>")
+	       ,
       newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
          .print()
 	       ,
 	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
+	       .print() </p>")
 	       .print()
 	       ,
 	       newKey(" ")
@@ -910,7 +911,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now let's see what baby dragon Bindy says about the shadow. </p>")
+		newText ("<p> Hai să vedem ce spune puiul de dragon Bindy despre umbră.</p>")
 		,
 		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
                .print ()
@@ -918,9 +919,9 @@ PennController ("experiment",
 		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon Bindy: It is certain that it is the red frog.</p>")
+		newText ("<p> Puiul de dragon Bindy: Sigur că este broasca roşie.</p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -948,8 +949,8 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> It is certain that it is the red frog indeed! </p>"),
-		newText ("<p> Now let's see what baby dragon Flurry says about the shadow. </p>"),
+		newText ("<p>  E sigur că este broasca roşie într-adevăr! </p>"),
+		newText ("<p> Hai să vedem acum ce spune puiul de dragon Flurry despre umbră. </p>"),
 		newImage ("Flurry", "Flurry.png")
 		.print ()
 		,
@@ -967,9 +968,9 @@ PennController ("experiment",
                .print ()
 		,
 
-		newText ("<p> Baby Dragon Flurry: It is possible that it is the red frog.</p>")
+		newText ("<p> Puiul de dragon Flurry: Poate că este broasca roşie. </p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -1000,9 +1001,9 @@ PennController ("experiment",
 		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon Flurry: It is certain that it is the blue frog.</p>")
+		newText ("<p> Puiul de dragon Flurry: Sigur că este broasca albastră. </p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -1034,9 +1035,9 @@ PennController ("experiment",
                .print ()
 		,
 		
-		newText ("<p> Baby Dragon Flurry: It is possible that it is the purple frog. </p>")
+		newText ("<p> Puiul de dragon Flurry: Poate că este broasca mov. </p>")
 	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
+		newText ("<p> Cum vei răsplati puiul de dragon? </p>")
 		,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -1064,7 +1065,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now let's see who the shadow belongs to. Pam-pam! It's the red frog! </p>")
+	       newText ("<p> Hai acum să vedem a cui este umbra. Pam-pam! Este broasca roşie! </p>")
 	         ,         
 	     newImage ("redfrogrevealedonstage.jpg")
                .print ()
