@@ -6,7 +6,7 @@ PennController( "welcome" ,
     defaultText
         .print()
     ,
-   newText("<p> Salutare tuturor, vom juca un joc foarte distractiv împreună cu un vrăjitor, un pui de dragon, nişte umbre care aparţin unor animale şi sunete făcute de ele. (Fii atent şi la sunete deci.) </p>" ),
+   newText("<p> Salutare tuturor, vom juca un joc foarte distractiv împreună cu un vrăjitor, doi pui de dragon, nişte umbre care aparţin unor animale şi sunete făcute de ele. (Fii atent şi la sunete deci.) </p>" ),
     newText("<p> Te rog introdu ID-ul tău, răspunde la nişte întrebări, iar apoi fă click pe butonul de mai jos pentru a începe experimentul.</p>")
     ,
     newTextInput("ID")
@@ -43,7 +43,7 @@ PennController("welcome" ,
 	    ,
 	    newText ("<p> A fost odată ca niciodată, într-un ţinut îndepărtat, un vrăjitor foarte talentat pe nume Merlin, căruia îi plăcea foarte mult să se joace cu umbrele şi să îi facă pe ceilalţi să ghicească ale cui sunt.. </p>")
 	    ,
-	       newText ("<p> Acum Merlin joacă jocul umbrelor cu un pui de dragon foarte drăguţi,Flurry and Bindy, care trebuie să ghicească a cărui animal este umbra pe care o are în faţa sa.</p>")
+	       newText ("<p> Acum Merlin joacă jocul umbrelor cu doi pui de dragon foarte drăguţi, Flurry and Bindy, care trebuie să ghicească fiecare în parte a cărui animal este umbra pe care o văd.</p>")
 	              ,    
 	     newImage ("wizardanddragonsnames85.png")
                .print ()
@@ -689,7 +689,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Hai acum să vedem a cui este umbra. Pam-pam! Este câinele albastru! </p>")
+	       newText ("<p> Hai acum să vedem a cui este umbra. Pam-pam! Umbra este câinele albastru! </p>")
 	         ,         
 	     newImage ("bluedogonstage.jpg")
                .print ()
@@ -1063,7 +1063,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Hai acum să vedem a cui este umbra. Pam-pam! Este broasca roşie! </p>")
+	       newText ("<p> Hai acum să vedem a cui este umbra. Pam-pam! Umbra este broasca roşie! </p>")
 	         ,         
 	     newImage ("redfrogrevealedonstage.jpg")
                .print ()
