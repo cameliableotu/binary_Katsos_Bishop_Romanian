@@ -139,7 +139,7 @@ PennController("trial2" ,
 	       newText 
 	       ("<p> Iepuraşul portocaliu rămâne în faţa cortinei, celălalt iepuraş se duce în spatele cortinei. Puiul de dragon Flurry vede următoarea umbră. </p>"),
 	      
-	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
+	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage1.png")
 	       .print ( )
 	       ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
