@@ -183,7 +183,7 @@ PennController("trialbunny" ,
 	       ,
 	       newText 
 	       ("<p> Hai să vedem cum te descurci pe cont propriu. Pentru a răsplăti dragonul, fă pur şi simplu click pe mărul dorit.</p>"),
-	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
+	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage1.png")
 	       .print ( )
 	       ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
@@ -223,7 +223,7 @@ PennController("trialbunny2" ,
 	       ,
 	       
 	      
-	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
+	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage1.png")
 	       .print ( )
 	       ,
 	       newText ("<p> Puiul de dragon Flurry: Este iepuraşul roz.</p>")
