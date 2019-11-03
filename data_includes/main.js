@@ -77,7 +77,7 @@ PennController("details" ,
 	    defaultText
 	        .print()
 	       ,
- newText ("<p> Puii de dragon trebuie să descrie a cui crede că este umbra. </p>")
+ newText ("<p> Puii de dragon trebuie să descrie a cui cred că este umbra. </p>")
 	       ,
    newText ("<p> Când puiul de dragon oferă cea mai bună descriere, trebuie să-l răsplăteşti cu un măr mare. </p>"), 
    newText ("<p> Atunci când puiul de dragon nu oferă cea mai bună descriere, îi dai doar un măr mic. </p>")
@@ -1099,7 +1099,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-	newText ("<p> Toţi pisicile s-au dus acum în spatele cortinei. <p>")
+	newText ("<p> Toate pisicile s-au dus acum în spatele cortinei. <p>")
 	       ,
   newText ("<p> Puii de dragon trebuie să descrie a cui cred că este umbra. </p>")
 	       ,
