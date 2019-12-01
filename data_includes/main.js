@@ -61,9 +61,8 @@ PennController("details" ,
 	        .print()
 	,
   newText("<p> Imaginile vor arăta umbra, dar şi toate animalele din joc şi animalele care se află atunci în faţa cortinei. </p>"),
-newText ("<p> Dacă nu sunt deloc animale în faţa cortinei , va fi în loc o linie. </p>")
-	       ,
- newText ("<p> De exemplu, în imaginea de mai jos, sunt trei pisici şi niciuna din ele nu este în faţa cortinei. Toate pisicile s-au dus în spatele cortinei, dar umbra aparţine doar uneia dintre ele.</p>"),
+
+ newText ("<p> De exemplu, în imaginea de mai jos, sunt trei pisici in joc. Cea verde este în faţa cortinei. Celelalte pisici sunt în spatele cortinei, dar umbra aparţine doar uneia dintre ele.</p>"),
 	  newImage ("catshadowonecatonstage", "catshadowonecatonstage.png")
 	.print (),
 	       newText ("<p> Pentru a trece la pagina următoare pe parcursul jocului, foloseşte bara de spaţiu (space bar). </p>")
