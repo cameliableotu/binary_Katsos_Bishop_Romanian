@@ -41,7 +41,7 @@ PennController("welcome" ,
 	    defaultText
 	        .print()
 	    ,
-	    newText ("<p> A fost odată ca niciodată, într-un ţinut îndepărtat, un vrăjitor foarte talentat pe nume Merlin, căruia îi plăcea foarte mult să se joace cu umbrele şi să îi facă pe ceilalţi să ghicească ale cui sunt.. </p>")
+	    newText ("<p> A fost odată ca niciodată, într-un ţinut îndepărtat, un vrăjitor foarte talentat pe nume Merlin, căruia îi plăcea foarte mult să se joace cu umbrele şi să îi facă pe ceilalţi să ghicească ale cui sunt. </p>")
 	    ,
 	       newText ("<p> Acum Merlin joacă jocul umbrelor cu doi pui de dragon foarte drăguţi, Flurry and Bindy, care trebuie să ghicească fiecare în parte a cărui animal este umbra pe care o văd.</p>")
 	              ,    
