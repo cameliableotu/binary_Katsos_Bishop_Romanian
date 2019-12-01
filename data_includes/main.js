@@ -1088,7 +1088,7 @@ PennController("experiment" ,
 	       newAudio("catsounds", "catsounds.mp3")
 		.play()
 		,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       newText ("<p> Pentru a trece la pagina următoare, foloseşte bara de spaţiu (space bar). </p>")
 	       .print()
 	       ,
 	       newKey(" ")
