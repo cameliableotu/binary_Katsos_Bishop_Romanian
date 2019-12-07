@@ -171,8 +171,7 @@ newSelector()
     .settings.log()
     .wait()
 )
-.log( "ID" , getVar("ID"),
- .log( "Age" , getVar("Age"))
+.log( "ID" , getVar("ID"), "Age" , getVar("Age"))
 ;
 
 	        
