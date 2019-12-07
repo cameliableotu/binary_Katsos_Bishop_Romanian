@@ -34,11 +34,7 @@ PennController( "welcome" ,
     ,
     newVar("ID")
         .settings.global()
-        .set( getTextInput("ID")),
-	      
-	 newVar("Age")
-        .settings.global()
-        .set( getTextInput("Age"))      )
+        .set( getTextInput("ID")))
 	      
 .log( "ID" , getVar("ID"));
 PennController("welcome" ,
