@@ -10,18 +10,26 @@ PennController( "welcome" ,
     newText("<p> Te rog introdu ID-ul tău, răspunde la nişte întrebări, iar apoi fă click pe butonul de mai jos pentru a începe experimentul.</p>")
     ,
     newTextInput("ID")
+	        .settings.log()
+    .settings.lines(0)
         .print()
     ,
      newText("<p> Ce vârstă ai? </p>"),
     newTextInput("Age")
+	       .settings.log()
+    .settings.lines(0)
         .print()
 	       ,
 	  newText("<p> Ce sex ai? (M/ F/ Altul) </p>"),
 	       newTextInput ("Gender")
+	        .settings.log()
+    .settings.lines(0)
         .print()
 	       , 
 	        newText("<p> Cu ce te ocupi?</p>"),
 	    newTextInput ("Profession")  
+	        .settings.log()
+    .settings.lines(0)
         .print()
 	       ,
 	       newText ("<p>Pentru a trece la pagina următoare pe parcursul jocului, foloseşte bara de spaţiu (space bar). </p>")
@@ -34,13 +42,9 @@ PennController( "welcome" ,
     ,
     newVar("ID")
         .settings.global()
-        .set( getTextInput("ID")),
+        .set( getTextInput("ID")))
 	      
-	newVar("Age")
-        .settings.global()
-        .set( getTextInput("Age")))
-	      
-.log( "ID" , getVar("ID"), "Age", getVar ("Age"));
+.log( "ID" , getVar("ID"));
 PennController("welcome" ,
 	    defaultText
 	        .print()
